@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216.84 69.77">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #b1812e;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: JuliusSansOne-Regular, 'Julius Sans One';
+        font-size: 36px;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-8 {
+        letter-spacing: .05em;
+      }
+
+      .cls-9 {
+        fill: #231f20;
+      }
+    </style>
+  </defs>
+  <text class="cls-4" transform="translate(0 30.87)"><tspan class="cls-2" x="0" y="0">D</tspan><tspan class="cls-1" x="29.34" y="0">r</tspan><tspan class="cls-2" x="50.36" y="0">one</tspan><tspan class="cls-9" x="126.18" y="0"> </tspan></text>
+  <text class="cls-3" transform="translate(28.89 61.56)"><tspan class="cls-6" x="0" y="0">B</tspan><tspan class="cls-7" x="21.92" y="0">y</tspan><tspan x="41.47" y="0">gge</tspan><tspan class="cls-8" x="112.5" y="0">r</tspan><tspan class="cls-5" x="136.33" y="0">.dk</tspan></text>
+</svg>

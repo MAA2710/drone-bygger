@@ -1,0 +1,45 @@
+/*******Gælder for alt*******/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*******Framen på hjemmesiden*******/
+.container{
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*******Body*******/
+body{
+    background-color: rgba(15, 15, 15, 1);
+    /* background-color: blue; */
+}
+
+/*******Header*******/
+header{
+width: 100%;
+
+}
+
+/*******De 4 kort*******/
+.kort-sektion{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; /*Der er en 50px's afstand mellem kasserne*/
+}
+
+.kort{
+    display: block; /*Gør at a bliver behandlet som en kasse ligesom div*/
+    width: calc(50% - 25px); /*calc(lommeregner) 50% - 25px sidder de 4 boxse til at være 2 og 2 ved siden af hinanden*/
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.kort img{
+    width: 50px;
+    
+}
+ 
+/*******?*******/
