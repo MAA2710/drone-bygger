@@ -6,11 +6,11 @@
 }
 
 /*******Framen på hjemmesiden*******/
-.container{
+/* .container{
     max-width: 1400px;
     padding: 0 15px;
     margin: 0 auto;
-}
+} */
 
 /*******Body*******/
 body{
@@ -25,11 +25,11 @@ header .wrapper{
     justify-content: center;
     align-items: center;
     /* position: fixed; */
-    height: 87px;
+    height: 90px;
     top: 0;
     z-index: 1;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9); /*Skal være 0.9*/
 
 }
 
@@ -38,35 +38,33 @@ header .logo{
     margin-right: 100px;
 }
 
-header .header-ekstra-box{ /*Virker ikke*/
+/* header .header-ekstra-box{
     width: 334px;
     height: 57px;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 0px 0px 15px 15px;
     
-}
+} */
 
-nav{
-    display: flex;
-    background-color: rgb(56, 81, 81);
-}
 
 nav ul{
     display: flex;
-    list-style-type: none;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
+    gap: 67px;
+
+    list-style-type: none;
+
 }
 
 nav a{
     display: flex;
+
     text-decoration: none;
     color: white;
-    justify-content: end;
     font-size: 18px;
-    position: relative;
-    overflow: hidden;
-    display: block;
+
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -76,47 +74,71 @@ nav #søgefelt{
 
 
 /*******De 4 kort*******/
+/* .cintainer{
+    width: 100%;
+    height: 100%;
+    margin-top: 90px;
+
+} */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: blanchedalmond;
+    height: 840px ;
+}
+
 .kort-sektion{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+
     gap: 50px; /*Der er en 50px's afstand mellem kasserne*/
-    
 }
 
 .kort{
+    display: block;
     display: flex;
-    text-align: center;
-    height: 260px;
-    width: calc(50% - 25px); /*calc(lommeregner) 50% - 25px sidder de 4 boxse til at være 2 og 2 ved siden af hinanden*/
-    display: block; /*Gør at a bliver behandlet som en kasse ligesom div*/
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 1px solid #B1812E;
-    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
 
+    height: 260px;
+    width: 700px;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    border: 1px solid #B1812E;
+
+    text-decoration: none;
 }
 
 .kort h2{
-    text-decoration: none;
-    color: white;
-    justify-content: end;
+    display: flex;
+    justify-content: center;
+
+    width: 350px;
+
     font-size: 50px;
-    position: relative;
-    overflow: hidden;
-    display: block;
+    color: white;
     font-family: 'Open Sans', sans-serif;
 }
 
 .kort img{
-    width: 100px;
-    
+    width: 100px;   
+
 }
 
-#video {
+/* #video {
     position: fixed;
     right: 0;
     bottom: 0;
     width: 100%; 
     height: 100%;
     z-index: -1;
-  }
+  } */
+  
 /*******?*******/
