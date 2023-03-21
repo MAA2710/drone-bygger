@@ -14,32 +14,109 @@
 
 /*******Body*******/
 body{
-    background-color: rgba(15, 15, 15, 1);
-    /* background-color: blue; */
+    margin: 0; 
+    /* background-color: rgba(15, 15, 15, 1); */
+    background-color:rgb(12, 44, 73);
 }
 
 /*******Header*******/
-header{
-width: 100%;
+header .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+    height: 87px;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
 
 }
+
+header .logo{
+    width: 363px;
+    margin-right: 100px;
+}
+
+header .header-ekstra-box{ /*Virker ikke*/
+    width: 334px;
+    height: 57px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 0px 0px 15px 15px;
+    
+}
+
+nav{
+    display: flex;
+    background-color: rgb(56, 81, 81);
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    justify-content: end;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav #søgefelt{
+    width: 23px;
+}
+
 
 /*******De 4 kort*******/
 .kort-sektion{
     display: flex;
     flex-wrap: wrap;
     gap: 50px; /*Der er en 50px's afstand mellem kasserne*/
+    
 }
 
 .kort{
-    display: block; /*Gør at a bliver behandlet som en kasse ligesom div*/
+    display: flex;
+    text-align: center;
+    height: 260px;
     width: calc(50% - 25px); /*calc(lommeregner) 50% - 25px sidder de 4 boxse til at være 2 og 2 ved siden af hinanden*/
+    display: block; /*Gør at a bliver behandlet som en kasse ligesom div*/
     background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #B1812E;
+    border-radius: 15px;
+
+}
+
+.kort h2{
+    text-decoration: none;
+    color: white;
+    justify-content: end;
+    font-size: 50px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .kort img{
-    width: 50px;
+    width: 100px;
     
 }
- 
+
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    height: 100%;
+    z-index: -1;
+  }
 /*******?*******/
