@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+
 /*******Gælder for alt*******/
 *{
     margin: 0px;
@@ -6,16 +8,15 @@
 }
 
 /*******Framen på hjemmesiden*******/
-/* .container{
+.container{
     max-width: 1400px;
     padding: 0 15px;
     margin: 0 auto;
-} */
+}
 
 /*******Body*******/
 body{
     margin: 0; 
-    /* background-color: rgba(15, 15, 15, 1); */
     background-color:rgba(15, 15, 15, 1);
 }
 
@@ -200,6 +201,43 @@ main{
     z-index: -1;
   }
   
+  /*******Opbygningen af en drone*******/
+
+  .opbygning{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .accordion {
+    background-color: rgba(15, 15, 15, 1);
+    color: #B1812E;
+    font-size: 24px;
+    width: 100%;
+
+    cursor: pointer;
+    padding: 18px;
+
+    border: none;
+    text-align: left;
+    outline: none;
+
+    transition: 0.4s;
+  }
+  
+  .panel {
+    background-color: rgba(15, 15, 15, 1);
+    color: rgba(206, 206, 206, 1);
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+
+    border-top: 1px solid rgba(206, 206, 206, 1);
+    border-bottom: 1px solid rgba(206, 206, 206, 1);
+    
+    transition: max-height 0.2s ease-out;
+  }
+
 /*******footer*******/
 footer{
     display: flex;
@@ -224,3 +262,4 @@ footer p{
     color: white;
     margin-left: 100px;
 }
+
