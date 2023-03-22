@@ -203,11 +203,12 @@ main{
   
   /*******Opbygningen af en drone*******/
 
-  .opbygning{
+  #opbygning{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    height: 1700px;
+    
   }
-
 
   .accordion {
     background-color: rgba(15, 15, 15, 1);
@@ -228,6 +229,8 @@ main{
   .panel {
     background-color: rgba(15, 15, 15, 1);
     color: rgba(206, 206, 206, 1);
+    font-size: 20px;
+
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
