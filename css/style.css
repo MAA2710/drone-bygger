@@ -16,7 +16,7 @@
 body{
     margin: 0; 
     /* background-color: rgba(15, 15, 15, 1); */
-    background-color:rgb(12, 44, 73);
+    background-color:rgba(15, 15, 15, 1);
 }
 
 /*******Header*******/
@@ -65,7 +65,7 @@ nav a{
     color: white;
     font-size: 18px;
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto';
 }
 
 nav #søgefelt{
@@ -85,12 +85,14 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-color: blanchedalmond;
-    height: 840px ;
+    
+    height: 817px ;
+    
+    /* background-color: blanchedalmond; */
 }
 
-.kort-sektion{
+/**********************Kort til forsiden**********************/
+.fire-kort-sektion{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +101,7 @@ main{
     gap: 50px; /*Der er en 50px's afstand mellem kasserne*/
 }
 
-.kort{
+ .fire-kort-sektion .kort{
     display: block;
     display: flex;
     justify-content: center;
@@ -116,29 +118,109 @@ main{
     text-decoration: none;
 }
 
-.kort h2{
+.fire-kort-sektion .kort h2{
     display: flex;
     justify-content: center;
 
     width: 350px;
 
     font-size: 50px;
+    font-style: normal;
+    font-weight: 100; /*Skal være tynder end det */
+    line-height: 75px;
     color: white;
     font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Roboto'; */
+
+    text-shadow: 4px 4px rgba(0, 0, 0, 1);
+
 }
 
-.kort img{
-    width: 100px;   
+.fire-kort-sektion .kort img{
+    width: 140px;   
+}
+/**********************Kort til Hardware siden*********************/
+
+.to-kort-sektion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 50px; /*Der er en 50px's afstand mellem kasserne*/
+}
+
+.to-kort-sektion .kort{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+
+    height: 450px;
+    width: 700px;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    border: 1px solid #B1812E;
+
+    text-decoration: none;
+}
+
+.to-kort-sektion .kort h2{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 100; /*Skal være tynder end det */
+    line-height: 75px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Roboto'; */
+
+    text-shadow: 4px 4px rgba(0, 0, 0, 1);
 
 }
 
-/* #video {
+.to-kort-sektion .kort img{
+    width: 180px;   
+    margin-bottom: 30px;
+}
+
+/*******video*******/
+#video {
     position: fixed;
     right: 0;
     bottom: 0;
     width: 100%; 
-    height: 100%;
+    /* height: 100%; */
     z-index: -1;
-  } */
+  }
   
-/*******?*******/
+/*******footer*******/
+footer{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 30px;
+
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    background-color: #B1812E;
+
+    /* border: 1px solid #B1812E; */
+    /* border-top: 1px solid #B1812E; */
+
+    border-bottom: rgba(15, 15, 15, 1);
+}
+
+footer p{
+    font-size: 12px;
+    font-family: 'Libre Baskerville';
+
+    color: white;
+    margin-left: 100px;
+}
