@@ -1,268 +1,657 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-/*******Gælder for alt*******/
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+/**********************Gælder for alt*********************/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-/*******Framen på hjemmesiden*******/
-.container{
-    max-width: 1400px;
-    padding: 0 15px;
-    margin: 0 auto;
+p{
+    color: rgba(206, 206, 206, 1);
+    font-size: 28px;
+    font-family: 'Libre Baskerville';
 }
 
-/*******Body*******/
-body{
-    margin: 0; 
-    background-color:rgba(15, 15, 15, 1);
+h3{
+  color: #b1812e;
+  font-size: 32px;
+  font-family: 'Libre Baskerville';
 }
 
-/*******Header*******/
-header .wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* position: fixed; */
-    height: 90px;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /*Skal være 0.9*/
-
+h4{
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  font-family: 'Libre Baskerville';
 }
 
-header .logo{
-    width: 363px;
-    margin-right: 100px;
+/**********************Framen på hjemmesiden*********************/
+.forside-container {
+  max-width: 2000px;
+  padding: 0 15px;
+  margin: 0 auto; /*Klemmer ind fra siderne af så det bliver centret*/
 }
 
-/* header .header-ekstra-box{
+.container {
+  max-width: 1800px;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: rgba(15, 15, 15, 1);
+
+  /* border-right: 1px solid black;
+  border-left: 1px solid black; */
+}
+
+/**********************Body*********************/
+body {
+  margin: 0;
+  background-color: rgb(20, 20, 20);
+}
+
+/**********************Header*********************/
+header .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 90px;
+  top: 0;
+  z-index: 4;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /*Skal være 0.9*/
+}
+
+header .logo {
+  width: 363px;
+  margin-right: 100px;
+}
+/*-------Ekstra box-------*/
+/*header .header-ekstra-box{
     width: 334px;
     height: 57px;
+    position: fixed;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 0px 0px 15px 15px;
     
-} */
+}*/
 
+/*-------Nav-------*/
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  gap: 67px;
 
-    gap: 67px;
+  list-style-type: none;
+}
 
-    list-style-type: none;
+nav a {
+  display: flex;
+
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+
+  font-family: "Roboto";
+  transition: 1s;
+}
+
+nav a:hover{
+  color: #b1812e;
 
 }
 
-nav a{
-    display: flex;
-
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-
-    font-family: 'Roboto';
+nav #søgefelt {
+  width: 23px;
 }
 
-nav #søgefelt{
-    width: 23px;
-}
-
-
-/*******De 4 kort*******/
-/* .cintainer{
-    width: 100%;
-    height: 100%;
-    margin-top: 90px;
-
-} */
-
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    height: 817px ;
-    
-    /* background-color: blanchedalmond; */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /*100% af skærmens højte*/
+  /* background-color: blanchedalmond;*/
 }
 
 /**********************Kort til forsiden**********************/
-.fire-kort-sektion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.fire-kort-sektion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
 
-    gap: 50px; /*Der er en 50px's afstand mellem kasserne*/
+  gap: 50px; /*Der er en 50px's afstand mellem kasserne*/
 }
 
- .fire-kort-sektion .kort{
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
+.fire-kort-sektion .kort {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    height: 260px;
-    width: 700px;
+  height: 260px;
+  width: 700px;
 
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 15px;
-    border: 1px solid #B1812E;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  border: 1px solid #b1812e;
 
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.fire-kort-sektion .kort h2{
-    display: flex;
-    justify-content: center;
+.fire-kort-sektion .kort h2 {
+  display: flex;
+  justify-content: center;
 
-    width: 350px;
+  width: 350px;
 
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 100; /*Skal være tynder end det */
-    line-height: 75px;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    /* font-family: 'Roboto'; */
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 100; /*Skal være tynder end det */
+  line-height: 75px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: 'Roboto'; */
 
-    text-shadow: 4px 4px rgba(0, 0, 0, 1);
-
+  text-shadow: 4px 4px rgba(0, 0, 0, 1);
 }
 
-.fire-kort-sektion .kort img{
-    width: 140px;   
+.fire-kort-sektion .kort img {
+  width: 140px;
 }
 /**********************Kort til Hardware siden*********************/
 
-.to-kort-sektion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.to-kort-sektion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
-    gap: 50px; /*Der er en 50px's afstand mellem kasserne*/
+  gap: 50px; /*Der er en 50px's afstand mellem kasserne*/
 }
 
-.to-kort-sektion .kort{
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
+.to-kort-sektion .kort {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    height: 450px;
-    width: 700px;
+  height: 450px;
+  width: 700px;
 
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 15px;
-    border: 1px solid #B1812E;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  border: 1px solid #b1812e;
 
-    text-decoration: none;
-}
-
-.to-kort-sektion .kort h2{
-    display: flex;
-    justify-content: center;
-
-    width: 100%;
-
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 100; /*Skal være tynder end det */
-    line-height: 75px;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    /* font-family: 'Roboto'; */
-
-    text-shadow: 4px 4px rgba(0, 0, 0, 1);
+  text-decoration: none;
 
 }
 
-.to-kort-sektion .kort img{
-    width: 180px;   
-    margin-bottom: 30px;
+.kort{
+  transition: 0.4s;
 }
 
-/*******video*******/
-#video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 100%; 
-    /* height: 100%; */
-    z-index: -1;
-  }
+.kort:hover{
+  scale: 1.05;
   
-  /*******Opbygningen af en drone*******/
+}
 
-  #opbygning{
-    display: flex;
-    flex-direction: column; 
-    height: 1700px;
-    
-  }
+.to-kort-sektion .kort h2 {
+  display: flex;
+  justify-content: center;
 
-  .accordion {
-    background-color: rgba(15, 15, 15, 1);
-    color: #B1812E;
-    font-size: 24px;
-    width: 100%;
+  width: 100%;
 
-    cursor: pointer;
-    padding: 18px;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 100; /*Skal være tynder end det */
+  line-height: 75px;
+  color: white;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Roboto';
 
-    border: none;
-    text-align: left;
-    outline: none;
+  text-shadow: 4px 4px rgba(0, 0, 0, 1);
+}
 
-    transition: 0.4s;
-  }
+.to-kort-sektion .kort img {
+  width: 180px;
+  margin-bottom: 30px;
+}
+
+/*-------video-------*/
+.video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  /* height: 100%; */
+  z-index: -1;
+}
+
+/**********************Opbygningen af en drone*********************/
+.opbygning {
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+}
+
+.opbygning h1 {
+  text-align: center;
+  width: 600px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600; /*Skal være tynder end det */
+  text-shadow: 4px 4px rgba(0, 0, 0, 1);
+  font-size: 75px;
+  color: white;
+
+  /* background-color: aquamarine; */
+}
+
+.opbygning-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+
+  position: relative; /*position: relative søger for at position: absoulte bliver inde i kassen når vi flytter rundt på ting*/
+
+  width: 100%;
+  z-index: 2;
+}
+
+/*-------overlay på videoen-------*/
+.opbygning-video::after {
+  content: ""; /*content skal være der ellers virker overlayet ikke*/
+  position: absolute;
+
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.opbygning-video h1 {
+  z-index: 2;
+  position: absolute; /*position: absoulte gør at noget ikke er solid mere*/
+}
+
+.artujek-et{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+/*-------artikel 1 text-------*/
+.artikel-et-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+  line-height: 2;
+}
+
+#top-text{
+  margin-top: 30px;
+}
+
+#bund-text{
+  margin-bottom: 30px;
+  width: 970px;
+}
+
+.artikel-et-text{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-------List-------*/
+.liste-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1400px;
+}
+
+.liste{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   
-  .panel {
-    background-color: rgba(15, 15, 15, 1);
-    color: rgba(206, 206, 206, 1);
-    font-size: 20px;
+  /* margin-left: 50px;
+  margin-right: 50px; */
 
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
+  font-size: 32px;
+  color:white;
+  font-family:'Roboto';
+}
 
-    border-top: 1px solid rgba(206, 206, 206, 1);
-    border-bottom: 1px solid rgba(206, 206, 206, 1);
-    
-    transition: max-height 0.2s ease-out;
+ul {
+    list-style: none;
   }
 
-/*******footer*******/
+li{
+    padding: 5px;
+}
+
+ul li::before {
+    content: "\2022";
+    color: #b1812e;
+    /* font-weight: bold;
+    display: inline-block;  */
+    width: 10px;
+    margin-right: 18px;
+  }
+
+ /*-------2 billder-------*/ 
+.billede{
+    width: 350px;
+
+    /* background-color: #b1812e;
+    border: solid rgb(3, 65, 18); */
+}
+
+/*-------Opbygningen accordion menu-------*/
+.accordion {   
+  background-color: rgba(15, 15, 15, 1);
+  color: white;
+  font-size: 32px;
+  font-family: 'Roboto';
+  width: 100%;
+
+  cursor: pointer;
+  padding: 8px;
+
+  border: none;
+  border-top: 1px solid rgba(206, 206, 206, 1);
+  text-align: left;
+  outline: none;
+
+  transition: 0.4s;
+}
+
+.accordion.active{
+  color: #b1812e;
+}
+
+.panel {
+  background-color: rgba(15, 15, 15, 1);
+  padding: 0 18px;
+  overflow: hidden;
+  max-height: 0;
+  width: 100%;
+
+  transition: max-height 0.2s ease-out;
+}
+
+.dopdawn-accordion{
+  width: 100%;
+}
+
+.accordion img{
+  width: 20px;
+  margin-right: 15px;
+  margin-left: 40px;
+
+  transition: 0.4s;
+}
+
+.accordion.active img{
+  rotate: 180deg;
+}
+
+/*-------Frame accordoin menu-------*/
+.artikel-to{
+  display: flex;
+  justify-content: space-around;
+}
+
+.frame-menu{
+  width: 720px;
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+.artikel-to-frame-billede{
+  display: flex;
+  align-items: center;
+}
+
+.artikel-to-frame-billede img{
+  height: 500px;
+  border-radius: 100px;
+  border: 2px solid #B1812E;
+}
+
+/*-------Flight Controller accordoin menu-------*/
+.artikel-tre{
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+/*-------Top del af FC menuen-------*/
+.fc-indhold-og-billede-et{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.fc-tekst-et p{
+  width: 780px;
+  margin-bottom: 10px;
+}
+
+.fc-tekst-et h3{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.artikel-tre-fc-billede-et{
+  display: flex;
+  align-items: center;
+}
+
+.artikel-tre-fc-billede-et img{
+  height: 500px;
+  border-radius: 100px;
+  background-color: aliceblue;
+  border: 2px solid #B1812E;
+}
+/*-------Bund del af FC menuen-------*/
+.fc-indhold-og-billede-to{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.fc-tekst-to{
+  display: flex;
+  flex-direction: column;
+}
+
+.fc-tekst-to h3{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.fc-tekst-to li{
+  color: rgba(206, 206, 206, 1);
+  font-size: 28px;
+  font-family: 'Libre Baskerville';
+}
+
+.artikel-tre-fc-billede-to{
+  display: flex;
+  align-items: flex-end;
+}
+
+.artikel-tre-fc-billede-to h3{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.artikel-tre-fc-billede-to img{
+  height: 250px;
+  border-radius: 100px;
+  border: 2px solid #B1812E;
+}
+
+/*-------Propeller accordoin menu-------*/
+.artikel-fire{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding-left: 100px;
+  padding-right: 100px;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.propeller-tekst h3{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+
+/*-------Propeller 4 kort-------*/
+.små-kort{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+
+
+.propeller-kort{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 350px;
+  
+  background-color: rgba(21, 21, 21, 1);
+  border-radius: 25px;
+  border: 2px solid #B1812E;
+  
+  transition: 1s;
+}
+
+
+.propeller-kort:hover{
+  scale: 1.05;
+  /* rotate: 2880deg; */
+}
+
+.afstads-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+
+  height: 500px;
+  width: 320px;
+}
+
+.propeller-kort img{
+  height: 200px;
+  width: 320px;
+
+  border-radius: 25px;
+}
+
+.afstads-box p{
+color:rgba(150, 150, 150, 1);
+font-family: 'Roboto';
+font-size: 18px;
+height: 100px;
+width: 300px;
+line-height: 1.5;
+}
+
+/*-------Kort knap-------*/
+.knap{
+  display: flex;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+
+  
+  height: 45px;
+  width: 150px;
+
+  background-color: #B1812E;
+  border-radius: 25px;
+
+  text-decoration: none;
+
+  transition: 1s;
+}
+
+.knap:hover{
+  background-color: black;
+}
+
+.knap:hover h5 { 
+  color: #b1812e
+}
+
+.knap h5{
+  font-family:'Roboto';
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700px;
+  color: #ffffff;
+}
+
+/*-------Tomme accordoin menuer-------*/
+.tomt{
+  display: flex;
+padding: 50px;
+
+}
+
+/**********************footer*********************/
 footer{
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    width: 100%;
-    height: 30px;
+  width: 100%;
+  height: 30px;
 
-    /* background-color: rgba(0, 0, 0, 0.9); */
-    background-color: #B1812E;
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  background-color: #b1812e;
 
-    /* border: 1px solid #B1812E; */
-    /* border-top: 1px solid #B1812E; */
+  /* border: 1px solid #B1812E; */
+  /* border-top: 1px solid #B1812E; */
 
-    border-bottom: rgba(15, 15, 15, 1);
+  border-bottom: rgba(15, 15, 15, 1);
 }
 
-footer p{
-    font-size: 12px;
-    font-family: 'Libre Baskerville';
+footer p {
+  font-size: 12px;
+  font-family: "Libre Baskerville";
 
-    color: white;
-    margin-left: 100px;
+  color: white;
+  margin-left: 100px;
 }
-
