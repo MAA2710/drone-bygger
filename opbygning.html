@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="wrapper container">
+        <div class="wrapper">
             <div class="logo">
                 <a href="index.html"><img src="billeder/logo.svg" alt=""></a>
             </div>
@@ -29,105 +29,269 @@
             </div> -->
     </header>
 
-    <main id="opbygning">
-        <section>
+    <main class="opbygning container">
+        <section class="opbygning-video">
             <h1>Opbygningen af en drone</h1>
-            <video muted autoplay loop width="100%" height="100%">
-                <source src="videoer/drone_video.mp4">
-            </video>
+                <video muted autoplay loop width="100%" height="100%">
+                    <source src="videoer/Build_drone_video.mp4">
+                </video>
         </section>
+        <section class="artikel-et">
+            <section class="artikel-et-text">
+                <p id="top-text">En drone er opbygget af en masse dele og komplekse elektroniske systemer.</p>
+            </section>
+
+            <section class="liste-box">
+                    <img class="billede" src="billeder/opbygning_billeder/artikel-et-billede-drone-et.png" alt="">
+
+                <ul class="liste">
+                    <li>Frame.</li>
+                    <li>Flight Controller.</li>
+                    <li>Receiver/RX.</li>
+                    <li>Controller/TX.</li>
+                    <li>Motor.</li>
+                    <li>Propeller.</li>
+                    <li>Speed controller/ESC.</li>
+                </ul>
+                <ul class="liste">
+                    <li>Batteri.</li>
+                    <li>GPS.</li>
+                    <li>Bipper.</li>
+                    <li>LED.</li>
+                    <li>FPV Camara.</li>
+                    <li>FPV Goglles.</li>
+                </ul>
+
+                    <img class="billede" src="billeder/opbygning_billeder/artikel-et-billede-drone-to.png" alt="">
+            </section>
+        
+        <section class="artikel-et-text">
+            <p id="bund-text">Her neden for, vil du få forklaret hvad de forskellige systemer gør og hvordan du kan <br>bruge dem til at bygger din egen drone .</p>
+        </section>
+    </section>
 
         <!-- accordion -->
-        <section class="container">            
+        <section class="dopdawn-accordion">            
             <!-- Section 1  -->
-            <button class="accordion">Frame</button>
+            <button class="accordion"><img src="billeder/opbygning_billeder/dropdownmenu_billeder/dropdownpil_orange.png" alt="">Frame</button>
             <div class="panel">
-                <div>
-                    <p>Framen er drones skillet som holder alle drones dele sammen. Framen er lavet kulfiber, så den kan holde til at flyve ind i ting og styrt, men det betyder ikke at den er umulig at ødelægge, så lad vær med prøv.</p>
-                    <br>
-                    <p>Framen er stellet til min drone man måler stellet i millimeter eller i inche’s.</p>
-                    <br>
-                    <p>Der findes mange forskellige frames i sjove former og farver, men frames er en smags sag.</p>
-                    <br>
-                    <p>Man skal bare lige vide, at der er nogle frames, der er nemmer at bygger end andre, Så husk lige at søge op på hvordan de bliver bygget.</p>
-                    <br>
-                    <p>Der er mange youtube videoer på de forskellige frames, så det er altid godt at tjekke dem ud inden køb.</p>
+                <div class="artikel-to">
+                    <div class="frame-menu">
+                        <p>Framen er drones skillet som holder alle drones dele sammen. Framen er lavet kulfiber, så den kan holde til at flyve ind i ting og styrt, men det betyder ikke at den er umulig at ødelægge,<br> så lad vær med prøv.</p>
+                        <br>
+                        <br>
+                        <p>Framen er stellet til min drone man måler stellet i millimeter eller i inche’s.</p>
+                        <br>
+                        <br>
+                        <p>Der findes mange forskellige frames i sjove former og farver, men frames er en smags sag.</p>
+                        <p>Man skal bare lige vide, at der er nogle frames, der er nemmer at bygger end andre, Så husk lige at søge op på hvordan de bliver bygget.</p>
+                        <br>
+                        <br>
+                        <p>Der er mange youtube videoer på de forskellige frames, så det er altid godt at tjekke dem ud inden køb.</p>
+                    </div>
+                    <div class="artikel-to-frame-billede">
+                        <img src="billeder/opbygning_billeder/drone.png" alt="">
+                    </div>
                 </div>
-                <img src="" alt="">
             </div>
             
             <!-- Section 2 -->
-            <button class="accordion">Flight Controller</button>
+            <button class="accordion"><img src="billeder/opbygning_billeder/dropdownmenu_billeder/dropdownpil_orange.png" alt="">Flight Controller</button>
             <div class="panel">
-              <p>Skal fyldes ud</p>
+                <div class="artikel-tre">
+                    <div class="fc-indhold-og-billede-et">
+                        <div class="fc-tekst-et">
+                            <p>Flight Controlleren/FC er hjernen på dronen.</p>
+                            <p>På selve FC'en er der bygget IMU/gyro, kompas og i nogle er der også bygget Bluetooth ind i.</p>
+                            <br>
+                            <br>
+                            <p>Flight controlleren fungere som et motherboard i en pc, ment på den <br>måde at man bruger FC'en til at sidde alt det forskellige udstyr på.</p>  
+                        
+                        <h3>Udstyr der kan tilkobles FC'en:</h3>
+                            <ul class="liste">
+                                <li>ESC'er.</li>
+                                <li>Kamera.</li>
+                                <li>Batteri.</li>
+                                <li>Receiver/Rx.</li>
+                                <li>Kamera transmitter/Tx.</li>
+                                <li>Bluetooth.</li>
+                                <li>Bipper.</li>
+                                <li>Leder.</li>
+                                <li>Gps.</li>
+                            </ul>
+                        </div>
+                        <div class="artikel-tre-fc-billede-et">
+                            <img src="billeder/opbygning_billeder/fc-setop.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="fc-indhold-og-billede-to">
+                        <div class="fc-tekst-to">
+
+                            <h3>Man kan få 2 typer FC's:</h3>
+
+                            <ul class="liste">
+                                <li>Den første er en standard flight controller uden tilbehør.</li>
+                                <li>Anden type FC der er, er en FC hvor ESC'erne er bygget ind i, i forvejen. Det er smart, da man så spare noget vægt, på den måde. Det er derimod ikke så smart da hvis en af ESC'erne brander af skal du skifte hele FC'en og lave ny opsætning på den.</li>
+                            </ul>
+
+                            <h3>Brush flight controller til DC motor:</h3>
+
+                            <p>Brush flight controller er en FC som er lavet til, at styrer brush DC motorer.</p>
+                            <br>
+                            <p>I en brush FC er der ikke ESC'er i da motorerne er DC og ikke skal bruge nogen.</p>
+                        </div>
+
+                        <div class="artikel-tre-fc-billede-to">
+                            <img src="billeder/opbygning_billeder/Brushed-DC-drone-motor.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <!-- Section 3 -->
-            <button class="accordion">Receiver (RX)</button>
+            <button class="accordion"><img src="billeder/opbygning_billeder/dropdownmenu_billeder/dropdownpil_orange.png" alt="">Receiver (RX)</button>
             <div class="panel">
-                <p>Skal være tom</p>
+                <div class="tomt">
+                    <p>Tomt</p>
+                </div>
             </div>
 
             <!-- Section 4 -->
-            <button class="accordion">Controller (TX)</button>
+            <button class="accordion"><img src="billeder/opbygning_billeder/dropdownmenu_billeder/dropdownpil_orange.png" alt="">Controller (TX)</button>
             <div class="panel">
-                <p>Skal være tom</p>
+                <div class="tomt">
+                    <p>Tomt</p>
+                </div>
             </div>
 
             <!-- Section 5 -->
-            <button class="accordion">Motor</button>
+            <button class="accordion"><img src="billeder/opbygning_billeder/dropdownmenu_billeder/dropdownpil_orange.png" alt="">Motor</button>
             <div class="panel">
-                <p>Skal være tom</p>
+                <div class="tomt">
+                    <p>Tomt</p>
+                </div>
             </div>
 
             <!-- Section 6 -->
-            <button class="accordion">Propeller</button>
+            <button class="accordion"><img src="billeder/opbygning_billeder/dropdownmenu_billeder/dropdownpil_orange.png" alt="">Propeller</button>
             <div class="panel">
-                <p>Skal fyldes ud</p>
+                <div class="artikel-fire">
+                    <div class="propeller-tekst">
+                        <p>Propellerne er det plastik som man sidder oven på motorerne, og med propellerne og motorerne for du kraft nok til at flyve.
+                        Propeller er målt i inche’s, som er selve størrelsen på propellen.</p>
+
+                        <h3>Der er 4 vigtige ting når man snakker om propellen:</h3>
+                    </div>
+                    <div class="små-kort">
+                        <div class="propeller-kort">
+                            <div class="afstads-box">
+                                <img src="billeder/opbygning_billeder/propeller-billede-et.png" alt="">
+                                <h4>Propellen størrelse:</h4>
+                                <p>Grunden til at den er vigtig er, at det er framen og motoren der bestemmer den.</p>
+                            
+                                <a class="knap" href="#">
+                                    <h5>LÆS MERE</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="propeller-kort">
+                            <div class="afstads-box">
+                                <img src="billeder/opbygning_billeder/propeller-billede-to.png" alt="">
+                                <h4>Propellens huld størrelse:</h4>
+                                <p>Her er en god video af RCwithAdam som forklare om det.</p>
+                                
+                                <a class="knap" href="https://www.youtube.com/watch?v=dWBXQa1Avb8" target="_blank">
+                                    <h5>SE VIDEO</h5>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="propeller-kort">
+                            <div class="afstads-box">
+                                <img src="billeder/opbygning_billeder/propeller-billede-tre.png" alt="">
+                                <h4>Formen af propellen:</h4>
+                                <p>Som udgangs punkt gør antallet af bladene på propellen, at den drejer bedre eller bliver mere stabil i luften.</p>
+                            
+                                <a class="knap" href="#">
+                                    <h5>LÆS MERE</h5>
+                                </a>
+                          </div>
+                        </div>
+
+                        <div class="propeller-kort">
+                            <div class="afstads-box">
+                                <img src="billeder/opbygning_billeder/propeller-billede-fire.png" alt="">
+                                <h4> Propellens steningen:</h4>
+                                <p>Steningen af bladene betyder meget for fart og drift</p>
+                            
+                                <a class="knap" href="#">
+                                    <h5>LÆS MERE</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Section 7 -->
-            <button class="accordion">Speed controller(ESC)</button>
+            <button class="accordion"><img src="billeder/opbygning_billeder/dropdownmenu_billeder/dropdownpil_orange.png" alt="">Speed controller(ESC)</button>
             <div class="panel">
-                <p>Skal være tom</p>
+                <div class="tomt">
+                    <p>Tomt</p>
+                </div>
             </div>
 
             <!-- Section 8 -->
-            <button class="accordion">Batteri</button>
+            <button class="accordion"><img src="billeder/opbygning_billeder/dropdownmenu_billeder/dropdownpil_orange.png" alt="">Batteri</button>
             <div class="panel">
-                <p>Skal være tom</p>
+                <div class="tomt">
+                    <p>Tomt</p>
+                </div>
             </div>
 
             <!-- Section 9 -->
-            <button class="accordion">GPS</button>
+            <button class="accordion"><img src="billeder/opbygning_billeder/dropdownmenu_billeder/dropdownpil_orange.png" alt="">GPS</button>
             <div class="panel">
-                <p>Skal være tom</p>
+                <div class="tomt">
+                    <p>Tomt</p>
+                </div>
             </div>
 
             <!-- Section 10 -->
-            <button class="accordion">Bipper</button>
+            <button class="accordion"><img src="billeder/opbygning_billeder/dropdownmenu_billeder/dropdownpil_orange.png" alt="">Bipper</button>
             <div class="panel">
-                <p>Skal være tom</p>
+                <div class="tomt">
+                    <p>Tomt</p>
+                </div>
             </div>
 
             <!-- Section 11 -->
-            <button class="accordion">LED</button>
+            <button class="accordion"><img src="billeder/opbygning_billeder/dropdownmenu_billeder/dropdownpil_orange.png" alt="">LED</button>
             <div class="panel">
-                <p>Skal være tom</p>
+                <div class="tomt">
+                    <p>Tomt</p>
+                </div>
             </div>
 
             <!-- Section 12 -->
-            <button class="accordion">FPV Camera</button>
+            <button class="accordion"><img src="billeder/opbygning_billeder/dropdownmenu_billeder/dropdownpil_orange.png" alt="">FPV Camera</button>
             <div class="panel">
-                <p>Skal være tom</p>
+                <div class="tomt">
+                    <p>Tomt</p>
+                </div>
             </div>
 
             <!-- Section 13 -->
-            <button class="accordion">FPV Goglles</button>
+            <button class="accordion"><img src="billeder/opbygning_billeder/dropdownmenu_billeder/dropdownpil_orange.png" alt="">FPV Goglles</button>
             <div class="panel">
-                <p>Skal være tom</p>
+                <div class="tomt">
+                    <p>Tomt</p>
+                </div>
             </div>
 
+            <!------Java skript------>
             <script>
             var acc = document.getElementsByClassName("accordion");
             var i;
@@ -139,7 +303,8 @@
                 if (panel.style.maxHeight) {
                   panel.style.maxHeight = null;
                 } else {
-                  panel.style.maxHeight = panel.scrollHeight + "px";
+                  const height = panel.scrollHeight + 50;
+                  panel.style.maxHeight = height + "px";
                 } 
               });
             }
@@ -148,8 +313,8 @@
 
     </main>
     <footer>
-        <div class="container">
-            <p>Mads als andersen</p>
+        <div>
+            <p>Webside af: Mads als andersen</p>
         </div>
     </footer>
 </body>
