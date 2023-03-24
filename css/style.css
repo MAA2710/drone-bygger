@@ -50,31 +50,45 @@ body {
 }
 
 /**********************Header*********************/
-header .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header {
   position: fixed;
-  height: 90px;
   top: 0;
-  z-index: 4;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9); /*Skal være 0.9*/
+  z-index: 4;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 header .logo {
   width: 363px;
   margin-right: 100px;
+  margin-bottom: -90px;
+  position: relative;
 }
-/*-------Ekstra box-------*/
-/*header .header-ekstra-box{
-    width: 334px;
-    height: 57px;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.9);
-    border-radius: 0px 0px 15px 15px;
-    
-}*/
+
+.dronebygger-logo{
+  width: 330px;
+}
+
+header .logo:after {
+  content: '';
+  position:absolute;
+  bottom: 0;
+  width: calc(100% - 20px);
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.9); /*Skal være 0.9*/
+  right: -10px;
+  z-index: -1;
+  border-radius: 0 0 15px 15px;
+}
 
 /*-------Nav-------*/
 nav ul {
